@@ -16348,3 +16348,9 @@
     require_webflow_navbar();
   })();
   
+
+// Check if the screen width is below a certain threshold (e.g., for mobile devices)
+if (window.innerWidth <= 768) {
+  // Redirect to the mobile version of the website
+  window.location.href = 'error.html';
+}
