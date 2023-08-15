@@ -4239,11 +4239,14 @@ figcaption {
   }
 
   .paragraph-2 {
-    text-align: right;
-    padding: 24px;
+    text-align: center;
+    margin-right: 0;
+    padding: 0 24px 24px;
   }
 
   .heading-5 {
+    text-align: center;
+    margin-bottom: 30px;
     padding-right: 18px;
   }
 
