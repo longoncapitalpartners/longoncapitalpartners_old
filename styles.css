@@ -3207,6 +3207,11 @@ figcaption {
   box-shadow: 0 20px 35px -20px #885fde;
 }
 
+.div-block-2._3-squares {
+  max-height: none;
+  min-height: 200px;
+}
+
 .div-block-2._3-squares._1 {
   margin-left: 0;
   margin-right: 20px;
@@ -3215,6 +3220,18 @@ figcaption {
 .div-block-2._3-squares._3 {
   margin-left: 0;
   margin-right: 0;
+}
+
+.div-block-2._3-squares._12 {
+  margin-top: -10px;
+  margin-bottom: -20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.div-block-2.squares-label {
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .div-block-3 {
@@ -3500,10 +3517,18 @@ figcaption {
   border-radius: 20px;
 }
 
-.heading-6, .heading-7, .heading-8 {
+.heading-6 {
   color: #fff;
   text-align: center;
   margin-top: 0;
+  font-size: 40px;
+}
+
+.heading-7, .heading-8 {
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+  font-size: 35px;
 }
 
 .paragraph-3 {
@@ -3682,6 +3707,64 @@ figcaption {
 .paragraph-12 {
   align-self: center;
   margin-left: 20px;
+}
+
+.icon {
+  max-width: 150px;
+  min-width: 100px;
+  display: block;
+  overflow: hidden;
+}
+
+.icon.icon3 {
+  margin-left: 35px;
+}
+
+.icon.icon2 {
+  margin-left: 30px;
+}
+
+.icon.icon1 {
+  margin-left: 36px;
+}
+
+.icon2 {
+  max-width: 150px;
+  min-width: 100px;
+  margin-top: 10px;
+}
+
+.container-10 {
+  justify-content: space-around;
+  display: flex;
+}
+
+.div-block-14 {
+  flex-direction: column;
+  flex: 1;
+  display: flex;
+}
+
+.div-block-15 {
+  flex: 1;
+  justify-content: center;
+  display: flex;
+}
+
+.image-4 {
+  max-height: 250px;
+  max-width: 250px;
+}
+
+.heading-14 {
+  flex: 1;
+  align-items: flex-start;
+  display: flex;
+}
+
+.paragraph-13 {
+  margin-bottom: 40px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 991px) {
@@ -3876,6 +3959,15 @@ figcaption {
     padding-right: 15px;
   }
 
+  .container-4 {
+    margin-left: 2px;
+  }
+
+  .div-block-2._3-squares {
+    margin-left: 0;
+    padding: 30px 20px;
+  }
+
   .holder {
     flex: 1;
     align-content: space-between;
@@ -3913,7 +4005,7 @@ figcaption {
   }
 
   .section-6 {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .heading-13 {
@@ -3935,7 +4027,7 @@ figcaption {
     min-width: auto;
     flex: 1;
     margin-left: 0;
-    margin-right: 10px;
+    margin-right: 40px;
     display: block;
   }
 }
@@ -4086,6 +4178,15 @@ figcaption {
     display: flex;
   }
 
+  .container-6 {
+    flex-direction: column;
+  }
+
+  .div-block-5 {
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .footer {
     padding-left: 15px;
     padding-right: 15px;
@@ -4150,8 +4251,24 @@ figcaption {
     line-height: 20px;
   }
 
+  .section-6 {
+    flex-direction: column;
+  }
+
   .heading-13 {
     min-width: auto;
+  }
+
+  .icon.icon3, .icon.icon2, .icon.icon1 {
+    margin-left: 85px;
+  }
+
+  .container-10 {
+    flex-direction: column;
+  }
+
+  .div-block-14 {
+    align-items: center;
   }
 }
 
@@ -4328,9 +4445,34 @@ figcaption {
     margin-left: 0;
     font-size: 16px;
   }
+
+  .icon.icon3 {
+    margin-left: 70px;
+  }
+
+  .icon.icon2 {
+    margin-left: 65px;
+  }
+
+  .icon.icon1 {
+    margin-left: 64px;
+  }
+
+  .container-10 {
+    flex-direction: column;
+  }
+
+  .div-block-14 {
+    align-items: center;
+  }
 }
 
-#w-node-f8103a79-0b29-fac4-e93d-a2051a7910b0-ae669269 {
+#w-node-f8103a79-0b29-fac4-e93d-a2051a7910b0-ae669269, #w-node-d39d479a-312d-e371-ff31-e8495d3fd9bd-ae669269 {
+  align-self: center;
+  justify-self: stretch;
+}
+
+#w-node-c04b96ae-2155-1bb6-cbd3-b1ea170337e0-ae669269, #w-node-_48ce97a3-5cd5-7a1e-7dc6-3ac4a9df0f21-ae669269 {
   justify-self: stretch;
 }
 
@@ -4340,6 +4482,15 @@ figcaption {
   }
 
   #w-node-d39d479a-312d-e371-ff31-e8495d3fd9bd-ae669269, #w-node-c04b96ae-2155-1bb6-cbd3-b1ea170337e0-ae669269 {
+    align-self: stretch;
+    justify-self: stretch;
+  }
+
+  #w-node-_48ce97a3-5cd5-7a1e-7dc6-3ac4a9df0f21-ae669269 {
+    align-self: stretch;
+  }
+
+  #w-node-_48ce97a3-5cd5-7a1e-7dc6-3ac4a9df0f28-ae669269, #w-node-_48ce97a3-5cd5-7a1e-7dc6-3ac4a9df0f31-ae669269 {
     align-self: stretch;
     justify-self: stretch;
   }
